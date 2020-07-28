@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<title>THE iDOLM@STER BREAKOUT GAME</title>
+<script src="hime.js"></script>
+<script>
+
+/**************************************************************************/
+/* 基本設定*/
+/**************************************************************************/
+
+conf = {
+   life:    9                     // 生命
+  ,ball:    "img/ball2.png"        // 球
+  ,ballK:   "img/ballK2.png"       // 爆裂球
+  ,title:   "img/title2.png"       // 標題
+  ,bonus:   "img/mika.jpg"     // 供玩家下載的圖
+  ,next:    "img/mika.jpg"     // 關卡破完的圖
+  ,margin:  150                    // 板子間隔圖片距離
+  ,debug:   0                     // 無敵模式(0:OFF 1:ON)
+};
+
+/**************************************************************************/
+/*  關卡設定                              */
+/**************************************************************************/
+
+stage.push({                      // 關卡設定
+   fuku:    "img/mika0.png"        // 上圖
+  ,bg:      "img/mika.jpg"      // 下圖
+  ,pdl:     "img/pdl2.png"         // 板子
+  ,kantuu:  10                    // 爆裂球機率(0:關閉)
+  ,speed:   8                     // 速度
+  ,ok:      0                    // 至多剩餘的磚塊數量
+});
+
+/**************************************************************************/
+/*                      */
+/**************************************************************************/
+
+
+
+/*****背景CSS**********************************/
+//-->
+</script>
+<style>
+
+body {
+	color:#555555;
+	background:#FFFFFF;
+	font-size:14px;
+	text-align:center;
+}
+
+h1, #guide {
+	background:#EEEEEE;
+	border:1px solid #DDDDDD;
+	width:480px;
+	margin:16px auto;
+	padding:6px;
+}
+
+h1 {
+	font-size:16px;
+}
+
+#guide {
+	font-size:12px;
+	text-align:left;
+}
+
+#gamescreen {
+	background:#E4E8F0;
+	border:1px solid #B4B8C0;
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+#bootmsg {
+	color:#FFFFFF;
+	background:#586080;
+	text-align:left;
+	line-height:1.2;
+	width:480px;
+	height:640px;
+	margin:0;
+}
+/* //文字 */
+#msg {
+	color:#ff3333;
+	font:bold 32px sans-serif;
+	text-shadow:-2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px -2px 0 #FFF, 2px 2px 0 #FFF;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="gamescreen"><p></p></div>
+
+
+
+</body>
+</html>
